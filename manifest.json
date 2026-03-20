@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Silver Price Extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension that displays the current price of silver on the icon.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": "icon48.png",
+    "default_title": "Silver Price"
+  },
+  "permissions": ["storage", "alarms", "idle"],
+  "host_permissions": ["https://api.gold-api.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
